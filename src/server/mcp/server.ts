@@ -38,6 +38,7 @@ import { addRankTrackingKeywordsTool } from "@/server/mcp/tools/add-rank-trackin
 import { createRankTrackerTool } from "@/server/mcp/tools/create-rank-tracker";
 import { estimateRankTrackerCostTool } from "@/server/mcp/tools/estimate-rank-tracker-cost";
 import { getRankTrackerTool } from "@/server/mcp/tools/get-rank-tracker";
+import { getRankTrackingRunTool } from "@/server/mcp/tools/get-rank-tracking-run";
 import { removeRankTrackingKeywordsTool } from "@/server/mcp/tools/remove-rank-tracking-keywords";
 import { pinRankTrackingKeywordsTool } from "@/server/mcp/tools/pin-rank-tracking-keywords";
 import { runRankTrackerTool } from "@/server/mcp/tools/run-rank-tracker";
@@ -279,6 +280,7 @@ export function registerOpenSeoTools(
   register(exportAiVisibilityDataTool);
   register(createRankTrackerTool);
   register(getRankTrackerTool);
+  register(getRankTrackingRunTool);
   register(addRankTrackingKeywordsTool);
   register(removeRankTrackingKeywordsTool);
   register(pinRankTrackingKeywordsTool);
